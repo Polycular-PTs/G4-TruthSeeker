@@ -11,4 +11,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyGame/Scenes/TutorialFakeNews.unity
     guid: 382d7132a1af95d46900c5dd22b68f5f
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Quiz.unity
+    guid: 3b942ad4b2bd7fa4da0e43d911990c29
+  - enabled: 1
+    path: Assets/MyGame/Scenes/ExplanationGame.unity
+    guid: 951b1281248506b439a22e570725654c
+  - enabled: 1
+    path: Assets/MyGame/Scenes/OfficeMitNotizbuch.unity
+    guid: d379d1fcc7083cd4a86b65cf654c25a4
+  - enabled: 1
+    path: Assets/MyGame/Scenes/OfficeMitNotizbuchUndAkte.unity
+    guid: f0b24b5f449ae4140bd604b05266f558
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Game.unity
+    guid: 6bc9a00ecea087048925af512f44f52d
+  - enabled: 1
+    path: Assets/MyGame/Scenes/EndingScene.unity
+    guid: 207ac445700e33145bca23239dfbe1b6
   m_configObjects: {}
