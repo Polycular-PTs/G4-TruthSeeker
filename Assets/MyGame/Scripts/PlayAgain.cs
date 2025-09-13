@@ -18,6 +18,6 @@ public class PlayAgain : MonoBehaviour
     }
     public void playAgain()
     {
-        SceneManager.LoadScene("Office");
+        SceneManager.LoadScene("StartScene");
     }
 }

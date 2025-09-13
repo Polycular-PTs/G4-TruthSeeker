@@ -7,7 +7,7 @@ public class StartQuiz : MonoBehaviour
 {
     public void next()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Quiz");
     }
 
 }
