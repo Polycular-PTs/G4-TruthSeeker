@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour
 
     private int currentQuestionIndex = 0;
     private int score = 0;
+    private int post = 1;
+
+    public Text questionCounterText;
+    public Text scoreFeedbackText;
 
     void Start()
     {
@@ -35,6 +39,7 @@ public class GameManager : MonoBehaviour
         falseButton.onClick.AddListener(() => AnswerQuestion(false));
         retryButton.onClick.AddListener(RestartQuiz);
         nextButton.onClick.AddListener(LoadNextScene);
+        UpdateUI();
     }
 
     void DisplayQuestion()
@@ -50,6 +55,8 @@ public class GameManager : MonoBehaviour
         if (questions[currentQuestionIndex].isTrue == answer)
         {
             score++;
+            UpdateUI();
+            post++;
         }
 
         currentQuestionIndex++;
@@ -57,6 +64,7 @@ public class GameManager : MonoBehaviour
         if (currentQuestionIndex < questions.Length)
         {
             DisplayQuestion();
+            UpdateUI();
         }
         else
         {
@@ -91,5 +99,10 @@ public class GameManager : MonoBehaviour
     void LoadNextScene()
     {
         SceneManager.LoadScene("OfficeMitNotizbuchUndAkte");
+    }
+    void UpdateUI()
+    {
+        questionCounterText.text = "Post: " + post + "/5";
+        scoreFeedbackText.text = "Score: " + score + "/5";
     }
 }
