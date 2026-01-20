@@ -11,6 +11,10 @@ Als Detektiv versucht man die Fake News zu identifizieren, in dem man mit der Mo
 
 
 
+https://github.com/user-attachments/assets/7feb2d03-9cab-4bb9-b48f-b532d864f7fd
+
+
+
 Unity 2022.3.9f1, C#, Windows 11
 
 Zielplattform: Windows Standalone
