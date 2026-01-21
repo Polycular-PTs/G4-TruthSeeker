@@ -32,8 +32,8 @@ public class QuizManager : MonoBehaviour
     public int points = 2;
 
     [Header("Hints System")]
-    public string[] hints;     // ← Inspector: 16 Hints eintragen!
-    private string[] currentHints; // ← Hints NUR für aktuelle Frage
+    public string[] hints;     
+    private string[] currentHints; 
 
     private int usedHints = 0;
     private int currentHintIndex = 0;
@@ -47,7 +47,7 @@ public class QuizManager : MonoBehaviour
 
     public int hintPenalty = 0;
 
-    private int questionIndex = 0; // ← aktuelle Frage
+    private int questionIndex = 0; 
 
     private void Start()
     {
@@ -63,17 +63,17 @@ public class QuizManager : MonoBehaviour
         UpdateUI();
     }
 
-    public void retry()
+    public void Retry()
     {
         SceneManager.LoadScene("SampleScene");
     }
 
-    public void next()
+    public void Next()
     {
         SceneManager.LoadScene("OfficeMitNotizbuch");
     }
 
-    public void gameOver()
+    public void GameOver()
     {
         Quizpanel.SetActive(false);
         GameOverpanel.SetActive(true);
@@ -88,17 +88,17 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    public void correct()
+    public void Correct()
     {
         totalScore += points;
         StartCoroutine(ShowFeedback(Color.green, "Correct!", true));
-        UpdateUI();
+
     }
 
-    public void wrong()
+    public void Wrong()
     {
         StartCoroutine(ShowFeedback(Color.red, "Wrong!", false));
-        UpdateUI();
+
     }
 
     void SetAnswers()
@@ -133,7 +133,7 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            gameOver();
+            GameOver();
         }
     }
 
@@ -163,9 +163,6 @@ public class QuizManager : MonoBehaviour
     }
 
 
-    // ----------------------------------------------------------
-    // HINT SYSTEM
-    // ----------------------------------------------------------
     void LoadHintsForQuestion()
     {
         int startIndex = questionIndex * 2;
@@ -178,7 +175,7 @@ public class QuizManager : MonoBehaviour
         if (startIndex + 1 < hints.Length)
             newHintsList.Add(hints[startIndex + 1]);
 
-        currentHints = newHintsList.ToArray(); // ← DIESE Hints gelten für diese Frage
+        currentHints = newHintsList.ToArray(); 
     }
 
     public void ApplyHintPenalty()
@@ -218,7 +215,7 @@ public class QuizManager : MonoBehaviour
             return;
         }
 
-        // Zweiter Hinweis → beide anzeigen
+
         if (usedHints == 1 && currentHints.Length > 1)
         {
             string combined = "";
@@ -244,7 +241,7 @@ public class QuizManager : MonoBehaviour
         warningPanel.SetActive(false);
     }
 
-    public void exit()
+    public void Exit()
     {
         warningPanel.SetActive(false);
     }

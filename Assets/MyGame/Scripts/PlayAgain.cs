@@ -16,7 +16,7 @@ public class PlayAgain : MonoBehaviour
     {
 
     }
-    public void playAgain()
+    public void StartAgain()
     {
         SceneManager.LoadScene("StartScene");
     }

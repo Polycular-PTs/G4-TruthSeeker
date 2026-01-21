@@ -16,7 +16,7 @@ public class LetsStart : MonoBehaviour
     {
         
     }
-    public void letsStart()
+    public void Starting()
     {
         SceneManager.LoadScene("Office");
     }

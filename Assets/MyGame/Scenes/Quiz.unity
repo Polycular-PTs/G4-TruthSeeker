@@ -1544,7 +1544,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 859772632}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
-        m_MethodName: next
+        m_MethodName: Next
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2393,7 +2393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1234742001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3967,7 +3967,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 859772632}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
-        m_MethodName: retry
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
