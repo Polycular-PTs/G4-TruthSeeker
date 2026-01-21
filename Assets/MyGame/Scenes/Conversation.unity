@@ -2358,7 +2358,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1448284844}
         m_TargetAssemblyTypeName: PlayAgain, Assembly-CSharp
-        m_MethodName: playAgain
+        m_MethodName: StartAgain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
