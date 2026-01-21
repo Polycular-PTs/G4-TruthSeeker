@@ -8,6 +8,6 @@ public class PlayAgain : MonoBehaviour
 
     public void StartAgain()
     {
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene(Scenes.StartScene);
     }
 }

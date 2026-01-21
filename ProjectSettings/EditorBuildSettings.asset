@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/MyGame/Scenes/EndingScene.unity
     guid: 207ac445700e33145bca23239dfbe1b6
   - enabled: 1
-    path: Assets/MyGame/Scenes/SampleScene.unity
+    path: Assets/MyGame/Scenes/Tweet.unity
     guid: 650a2f3c664617843927ab75fcc97887
   - enabled: 1
     path: Assets/MyGame/Scenes/Conversation.unity

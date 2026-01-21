@@ -8,7 +8,7 @@ public class Notizbuch : MonoBehaviour
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("ExplanationGame");
+        SceneManager.LoadScene(Scenes.ExplanationGame);
     }
 
 }

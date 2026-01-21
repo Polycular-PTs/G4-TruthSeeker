@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class Meeting : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void meeting()
+    public void StartMeeting()
     {
-        SceneManager.LoadScene("Conversation");
+        SceneManager.LoadScene(Scenes.Conversation);
     }
 }

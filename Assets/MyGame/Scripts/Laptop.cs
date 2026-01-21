@@ -6,9 +6,8 @@ using UnityEngine.SceneManagement;
 public class Laptop : MonoBehaviour
 {
 
-
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(Scenes.Tweet);
     }
 }

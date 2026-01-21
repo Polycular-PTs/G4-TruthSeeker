@@ -8,6 +8,6 @@ public class LetsStart : MonoBehaviour
 
     public void Starting()
     {
-        SceneManager.LoadScene("Office");
+        SceneManager.LoadScene(Scenes.Office);
     }
 }

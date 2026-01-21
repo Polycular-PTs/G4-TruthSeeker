@@ -93,12 +93,12 @@ public class GameManager : MonoBehaviour
 
     void RestartQuiz()
     {
-        SceneManager.LoadScene("ExplanationGame");
+        SceneManager.LoadScene(Scenes.ExplanationGame);
     }
 
     void LoadNextScene()
     {
-        SceneManager.LoadScene("OfficeMitNotizbuchUndAkte");
+        SceneManager.LoadScene(Scenes.OfficeMitNotizbuchUndAkte);
     }
     void UpdateUI()
     {
