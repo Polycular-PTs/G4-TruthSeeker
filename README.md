@@ -32,15 +32,9 @@ Pro richtig beantwortete Frage kann man zwei Punkte bekommen. Wenn die Frage ric
 In Arbeit:
 
 Design & Illustrationen fürs Game: Ezmana Katovic
+
 Die Tweets für das Game fertigstellen.
 
 Zusätzliche Features im Game: Marlene Laßl
+
 Einen Timer im Game einbauen.
-
-
-
-In Arbeit:
-
-Design & Illustrationen fürs Game: Ezmana Katovic
-
-Zusätzliche Features im Game (Timer,…): Marlene Laßl
