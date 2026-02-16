@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9639d95d5d9bebb40baa4bc4d106e699, type: 3}
+  m_Name: Question4
+  m_EditorClassIdentifier: 
+  title: 4) Why is emotional language a potential sign of misinformation?
+  answers:
+  - "It isn\u2019t because it\u2019s used in every article."
+  - It can be used to encourage readers to think critical.
+  - Emotional language makes news more entertaining and is encouraged to use.
+  - It can be used to rage bait people for engagement.
+  correctAnswers: 4
