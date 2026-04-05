@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class QuizGame : MonoBehaviour
 {
@@ -76,6 +77,7 @@ public class QuizGame : MonoBehaviour
         if (wrongAnswers >= 4)
         {
             ShowFinalMessage("The members of the group got too suspicious and have killed you. You lost...");
+            Invoke("RestartGame", 4f);
             return;
         }
 
@@ -100,8 +102,13 @@ public class QuizGame : MonoBehaviour
         trustBar.gameObject.SetActive(false);
         trustText.gameObject.SetActive(false);
         //next.gameObject.SetActive(true);
-        person.gameObject.SetActive(false);
+        person.gameObject?.SetActive(false);
 
+    }
+
+    void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 
